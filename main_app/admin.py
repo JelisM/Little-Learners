@@ -6,4 +6,23 @@ admin.site.register(Teacher)
 admin.site.register(Guardian)
 admin.site.register(Child)
 admin.site.register(Child)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#test
 # Register your models here.
