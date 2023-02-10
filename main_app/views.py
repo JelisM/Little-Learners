@@ -14,6 +14,13 @@ def teachers_index(request):
 
   return render(request, 'teachers/index.html', {'teachers': teachers})
 
+def guardians_index(request):
+   guardians = Guardian.objects.all()
+   print(guardians)
+   return render(request,'guardians/index.html',{'guardians': guardians})
+
+   
+
 
 def login_view(request):
     error_message = ''
