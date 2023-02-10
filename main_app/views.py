@@ -9,8 +9,9 @@ def home(request):
   return render(request, 'home.html')
 
 def teachers_index(request):
-  teachers = Teacher.objects.all()
+  teachers = Teacher.objects.filter(user=request.user)
   print(teachers)
+
   return render(request, 'teachers/index.html', {'teachers': teachers})
 
 
