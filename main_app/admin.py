@@ -5,4 +5,4 @@ from .models import Teacher, Guardian, Child
 admin.site.register(Teacher)
 admin.site.register(Guardian)
 admin.site.register(Child)
-# Register your models here.
+
