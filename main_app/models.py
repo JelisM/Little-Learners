@@ -14,8 +14,7 @@ class Guardian(models.Model):
   city = models.CharField(max_length=100)
   state = models.CharField(max_length=100)
   zip_code = models.CharField(max_length=5)
-  email = models.CharField(max_length=100)
-  password = models.CharField(max_length=100)
+  user = models.OneToOneField(User, on_delete=models.CASCADE)
 
 class Child(models.Model):
   name = models.CharField(max_length=100)
