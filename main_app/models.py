@@ -1,7 +1,6 @@
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
-from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your models here.
 class Teacher(models.Model):
